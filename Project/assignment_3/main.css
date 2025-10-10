@@ -1,0 +1,48 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 170%;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/cc/0f/70/cc0f70a7bc13f85029b0edbde4ae6a07.jpg);
+}
+h1{
+    background-color:rgb(156, 210, 228);
+}
+h2{
+    text-align: left;
+    background-color:lightblue;
+    margin-left: 750px;
+}
+h4{
+    display: flex;
+    text-align: center;
+    background-color:lightblue;
+    font-size: 150%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+#Chicken_Main_Logo{
+    width: 15%;
+    border: 5px dotted lightblue;
+    border-radius: 20%;
+    vertical-align: middle;
+}
+#Ingredients{
+    display: flex;
+    float: left;
+    margin-left: 3%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    justify-content: center;
+}
+.Ingredients_Text{
+    
+    text-align: left;
+}
+#Instructions_pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

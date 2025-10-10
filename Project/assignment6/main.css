@@ -1,0 +1,57 @@
+body{
+    background-image: url("https://i.pinimg.com/736x/7f/67/63/7f67634282c412aee4a5350d3d7b058a.jpg");
+    font-family: Arial, sans-serif;
+    text-align: left;
+    text-decoration: double;
+    color: rgb(121, 33, 156);   
+}
+#myRegister{
+    background-color: rgb(242, 190, 255);
+    border: 10px solid rgb(105, 66, 114);
+    margin: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+    text-align: left;
+}
+#myLogin{
+    background-color: rgb(242, 190, 255);
+    border: 10px solid rgb(194, 151, 204);
+    margin: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+}
+legend{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(121, 33, 156);
+    margin-bottom: 10px;
+}   
+#errormsg{
+    text-align: center;
+    color: rgb(116, 0, 100);
+    font-weight: bold;
+    margin-bottom: 20%;
+}
+fieldset{
+    border: 5px solid rgb(121, 33, 156);
+    border-radius: 10px;
+    padding: 20px;
+}
+span{
+    font-weight: bold;
+    margin-bottom: 20%;
+}
+#submit , #reset{
+    text-align: center;
+    background-color: rgb(121, 33, 156);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
