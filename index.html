@@ -1,131 +1,918 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Dngo_Kiwrn_Portfolio</title>
-		<script type="text/javascript" src="Project/Joint.js"></script>
-		<link rel="stylesheet" type="text/css" href="Project/DesignArt.css">
-	</head>
-	<body>
-		<header class="header">
-			
-			<i class="bx-menu" id="menu-icon"></i>
+<html lang="en">
 
-			<nav class="navbar">
-				<a href="index.html" class="botton">Home</a>
-				<a href="Project/project.html" class="botton">Project</a>
-			</nav>
-			
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Methichai — 3D Artist & Game Development Portfolio</title>
 
-		</header>
-		
-        <div class="banner">
-            <div class="slider" style="--quantity: 7;">
-                <div class="item" style="--position: 1;"><img src="Project/Pic/purple_1.jpg" alt="addadada"></div>
-				<div class="item" style="--position: 2;"><img src="Project/Pic/purple_2.jpg" alt="addadada"></div>
-				<div class="item" style="--position: 3;"><img src="Project/Pic/purple_3.jpg" alt="addadada"></div>
-				<div class="item" style="--position: 4;"><img src="Project/Pic/purple_4.jpg" alt="addadada"></div>
-				<div class="item" style="--position: 5;"><img src="Project/Pic/purple_5.jpg" alt="addadada"></div>
-				<div class="item" style="--position: 6;"><img src="Project/Pic/purple_6.jpg" alt="addadada"></div>
-				<div class="item" style="--position: 7;"><img src="Project/Pic/purple_7.jpg" alt="addadada"></div>
-                </div>
+  <!-- Meta Tags for SEO & Social Previews -->
+  <meta name="title" content="AI Methichai — 3D Artist & Game Development Portfolio">
+  <meta name="description" content="Portfolio of Methichai Prueksaking (AI Methichai) — 3D Artist, Modeler & Game Developer. KMUTT Media Technology. Driven by imagination, shaped by art.">
+  <meta name="author" content="Methichai Prueksaking">
 
-				<div class="content">
-					<h1 data-content="PORTFOLIO">
-						PORTFOLIO
-					</h1>
-				
-					<div class="author">
-						<div class="author_grid">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kaijeawfuufuu.github.io/Portfolio_Methichai/">
+  <meta property="og:title" content="AI Methichai — 3D Artist & Game Development Portfolio">
+  <meta property="og:description" content="3D Character Modeling, Environment Design, Animation & Game Development Portfolio.">
+  <meta property="og:image" content="assets/images/page_01.png">
 
-							<div class="model"><img src="Project/Pic/Methichai_Pic.png" alt="addadada"></div>
+  <!-- Fonts: Montserrat (Headings) & Open Sans (Body) - matching reference typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-						<div class="Backgroud">
-						<h2>Dngo_Kiwrn</h2>
-							<P>
-								<b>Hi, im Methichai Prueksaking. I luv kaijeawfuufuu </b>
-							</P>
-							<p>
-								ID: 66120501031
-							</p>
-							<p>
-								King Mongkut's University of Technology Thonburi
-							</p>
-							<p>
-								Faculty : School of Architecture and Design
-							</p>
-							<p>
-								Department : Media Arts and Media Technology
-							</p>
-							<p>
-								Field of study : Media Technology Game development
-							</p>
-						</div>
-						
-						<div class="Skill">
-							<h2> SKilll</h2>
-							<p>
-								UX/UI Graphic Design <li>Figma : Web Design</li> <li>Photoshop : Paint and Retuse Texture</li> <li>Illustrator : Vector, Infographic, Illustration Design</li> <li>After Effect : Effect Lighting Custom</li> <li>Procreate : Drawing Sketch</li> 
-							</p>
-							<p>
-								3D Modeling <li>Blender : basic RenderTexture and Lighting</li> <li>Maya : basic Rigging and Animation Model</li> <li>Zbrush : basic Sculpting Model High/Low Poly</li> <li>Substance 3D Painter : basic Texture for model</li> 
-							</p>
-							<p>
-								Game and Development <li>Unity : basic animator and Canvas UX/UI Design</li>
-							</p>
-						</div>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 
-						<div class="Hobbi">
-							<h2> Hobbi_interest</h2>
-							<p>
-								Play Game
-							</p>	
-							<p>
-								Listening to Music 
-							</p>
-							<p>
-								Drawing and painting 
-							</p>
-							<p>
-								Watching Movie and Series
-							</p>
-						</div>
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>🧊</text></svg>">
+</head>
 
-						
-						</div>
-					</div>
+<body>
+
+  <!-- ============================================
+       NAVIGATION BAR (Clean Light Glass - Reference Style)
+       ============================================ -->
+  <nav class="navtabbar" id="navbar">
+    <div class="nav-brand">
+      <a href="#home">AI METHICHAI<span class="brand-dot">.</span></a>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#home" class="nav-link active-link">HOME</a></li>
+      <li><a href="#artwork3d" class="nav-link">3D ARTWORK</a></li>
+      <li><a href="#gameprojects" class="nav-link">GAME PROJECTS</a></li>
+      <li><a href="#animation" class="nav-link">ANIMATION</a></li>
+      <li><a href="#artwork2d" class="nav-link">2D ARTWORK</a></li>
+      <li><a href="#about" class="nav-link">ABOUT ME</a></li>
+      <li><a href="#contact" class="nav-link">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================
+       HERO CINEMATIC BANNER
+       ============================================ -->
+  <section id="home" class="hero hero-cinematic">
+    <div class="hero-bg-container">
+      <img src="assets/images/page_05.png" alt="3D Game Showcase" class="hero-bg-media">
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge-pill">
+        <span class="pulse-dot"></span> 3D ARTIST &bull; MODELER &bull; GAME DEVELOPER
+      </div>
+      <h1 class="hero-title">AI <span class="highlight">METHICHAI</span></h1>
+      <p class="hero-tagline">“ DRIVEN BY IMAGINATION, SHAPED BY ART ”</p>
+      <p class="hero-subtitle">KMUTT Media Technology &bull; School of Architecture & Design &bull; Internship Ready</p>
+
+      <div class="hero-actions">
+        <a href="#artwork3d" class="btn-primary hero-action-btn">
+          VIEW 3D PORTFOLIO
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="#about" class="btn-secondary hero-action-btn">ABOUT ME</a>
+      </div>
+    </div>
+
+    <a href="#artwork3d" class="hero-scroll-indicator" aria-label="Scroll to portfolio">
+      <span class="scroll-text">EXPLORE</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ============================================
+       FILTER BAR
+       ============================================ -->
+  <div class="filter-sticky-wrapper">
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">ALL WORK</button>
+      <button class="filter-btn" data-filter="3d-character">3D CHARACTERS</button>
+      <button class="filter-btn" data-filter="3d-env">ENVIRONMENT &amp; PROPS</button>
+      <button class="filter-btn" data-filter="game-project">GAME PROJECTS</button>
+      <button class="filter-btn" data-filter="animation">ANIMATION</button>
+      <button class="filter-btn" data-filter="2d-art">2D ART &amp; UI</button>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SECTION: 3D ARTWORK SHOWCASE
+       ============================================ -->
+  <section id="artwork3d" class="projects-section artwork3d-section">
+    <div class="section-header">
+      <h2 class="section-title">3D ARTWORK &amp; MODELING</h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">Character Design, Low/High Poly Modeling, Texturing, Rigging &amp; Unity In-Engine Presentation</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Item 1: Guidi & Zeppe Player Character -->
+      <article class="projects-item" data-category="3d-character" data-img="assets/images/page_02.png" data-title="We Are Chouri: Guidi &amp; Zeppe" data-desc="Character Player Designed &amp; Modeled for Unity action project. Complete character sheet, turnarounds, costume color variants and 3D mesh.">
+        <div class="projects-image">
+          <img src="assets/images/page_02.png" alt="We Are Chouri Guidi & Zeppe 3D Character Model" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🧊 3D CHARACTER</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
             </div>
-		
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PROJECT 2024</span>
+            <span class="artwork-spec-pill">MAYA &bull; UNITY &bull; TEXTURE</span>
+          </div>
+          <h3 class="projects-title">Guidi &amp; Zeppe — Player Character</h3>
+          <p class="projects-description">Position Modeler: Designed &amp; modeled character players with custom costume color palettes and stylized topology.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Character Modeling</span>
+            <span class="tag tag-tool">Maya</span>
+            <span class="tag tag-tool">Unity</span>
+            <span class="tag tag-tool">Photoshop</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 2: Scene Objects & Monsters -->
+      <article class="projects-item" data-category="3d-character" data-img="assets/images/page_03.png" data-title="We Are Chouri: Monsters &amp; Props" data-desc="Stylized Boss/Monster 3D modeling, UV unwrap, hand-painted and custom emissive UV map texture sheets, plus modular lantern assets.">
+        <div class="projects-image">
+          <img src="assets/images/page_03.png" alt="Scene Objects & Monsters Modeled" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>👹 MONSTER &amp; PROPS</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PROJECT 2024</span>
+            <span class="artwork-spec-pill">BLENDER &bull; UV TEXTURE</span>
+          </div>
+          <h3 class="projects-title">Monsters &amp; Scene Props</h3>
+          <p class="projects-description">Complete monster sculpted assets, wireframes, diffuse/emissive maps, and Japanese lantern prop sets.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Creature Design</span>
+            <span class="tag tag-tool">Blender</span>
+            <span class="tag tag-tool">UV Mapping</span>
+            <span class="tag tag-tool">Substance</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 3: Candyland / 3D Food Objects -->
+      <article class="projects-item" data-category="3d-env" data-img="assets/images/page_04.png" data-title="We Are Chouri: Candyland Food Props" data-desc="15 unique stylized food and fantasy candy 3D props including macarons, donuts, glowing candles, waffle tiles, candy canes, and crystals.">
+        <div class="projects-image">
+          <img src="assets/images/page_04.png" alt="3D Food and Candy Props" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🍬 3D PROPS</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PROJECT 2024</span>
+            <span class="artwork-spec-pill">ENVIRONMENT ASSETS</span>
+          </div>
+          <h3 class="projects-title">Food &amp; Candy Environment Props</h3>
+          <p class="projects-description">Modular environmental props with custom hand-textured materials, subsurface and specular highlights.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">3D Props</span>
+            <span class="tag tag-tool">Blender</span>
+            <span class="tag tag-tool">Texturing</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 4: Unity In-Engine World Scenes -->
+      <article class="projects-item" data-category="game-project" data-img="assets/images/page_05.png" data-title="We Are Chouri: Unity Level Design" data-desc="Complete in-engine Unity level design featuring custom lighting, volumetric fog, post-processing shaders, and modular assets assembly.">
+        <div class="projects-image">
+          <img src="assets/images/page_05.png" alt="We Are Chouri Unity Scenes" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🏰 ENVIRONMENT / ENGINE</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PROJECT 2024</span>
+            <span class="artwork-spec-pill">UNITY &bull; LIGHTING &bull; SHADER</span>
+          </div>
+          <h3 class="projects-title">In-Engine Level Design &amp; Atmosphere</h3>
+          <p class="projects-description">Assembled game levels inside Unity: dynamic camera setups, emissive glow materials, and surreal atmospheric lighting.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Level Art</span>
+            <span class="tag tag-tool">Unity</span>
+            <span class="tag tag-tool">Lighting</span>
+            <span class="tag tag-tool">Post-Processing</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 5: Pokemon Center Variations & Banana House -->
+      <article class="projects-item" data-category="3d-env" data-img="assets/images/page_09.png" data-title="Stylized Architecture: Pokemon Center &amp; Banana House" data-desc="Architectural progression study: basic blockout, textured normal state, and dark/corrupted apocalyptic variant with banana house model.">
+        <div class="projects-image">
+          <img src="assets/images/page_09.png" alt="Pokemon Center and Banana House 3D Models" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🏠 3D ARCHITECTURE</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PROJECT 2024</span>
+            <span class="artwork-spec-pill">MAYA &bull; TEXTURING &bull; VARIANTS</span>
+          </div>
+          <h3 class="projects-title">Pokemon Center &amp; Stylized Buildings</h3>
+          <p class="projects-description">Multiple texture pass variations: standard, stylized comic, and apocalyptic dark mode, alongside wireframe topology.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Stylized Model</span>
+            <span class="tag tag-tool">Maya</span>
+            <span class="tag tag-tool">Substance 3D</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 6: Modern Interior & Cyber Street Render -->
+      <article class="projects-item" data-category="3d-env" data-img="assets/images/page_10.png" data-title="Lighting &amp; Rendering Studies" data-desc="Warm modern living room interior rendering with accurate bounce lighting, realistic materials, and Japanese alleyway sunset study.">
+        <div class="projects-image">
+          <img src="assets/images/page_10.png" alt="Modern Interior and Japanese Alley Lighting Render" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>💡 LIGHTING &amp; RENDER</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PROJECT 2024</span>
+            <span class="artwork-spec-pill">BLENDER CYCLES &bull; LIGHTING</span>
+          </div>
+          <h3 class="projects-title">Interior Architectural &amp; Street Renders</h3>
+          <p class="projects-description">Photorealistic warmth, specular bounce, global illumination, and cinematic panoramic lens experiments.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Lighting &amp; Comp</span>
+            <span class="tag tag-tool">Blender Cycles</span>
+            <span class="tag tag-tool">Compositing</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 7: Art Room Diorama & Joker Character Rig -->
+      <article class="projects-item" data-category="3d-character" data-img="assets/images/page_11.png" data-title="Art Room Diorama &amp; Joker Rig" data-desc="Cozy artist atelier isometric diorama alongside a full jester character skeleton bone rig and texture unwrapping maps.">
+        <div class="projects-image">
+          <img src="assets/images/page_11.png" alt="Art Room Diorama and Joker Skeletal Rig" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🎭 SKELETAL RIG &amp; DIORAMA</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PROJECT 2024</span>
+            <span class="artwork-spec-pill">MAYA RIG &bull; ISOMETRIC</span>
+          </div>
+          <h3 class="projects-title">Isometric Art Room &amp; Joker Skeletal Rig</h3>
+          <p class="projects-description">Detailed isometric painter studio with window backlighting, plus full forward/inverse kinematics character rig.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Rigging</span>
+            <span class="tag tag-tool">Maya</span>
+            <span class="tag tag-tool">Bone Setup</span>
+            <span class="tag tag-tool">Weight Painting</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 8: Additional 3D Studies (Pages 12-17) -->
+      <article class="projects-item" data-category="3d-character" data-img="assets/images/page_14.png" data-title="Sculpting &amp; High-Poly Creature Studies" data-desc="High-resolution sculpting in ZBrush, organic muscle anatomy, creature head busts, and stylized clay renders.">
+        <div class="projects-image">
+          <img src="assets/images/page_14.png" alt="ZBrush Organic Sculpting Studies" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🗿 ZBRUSH SCULPT</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PROJECT 2024</span>
+            <span class="artwork-spec-pill">ZBRUSH &bull; HIGH-POLY</span>
+          </div>
+          <h3 class="projects-title">High-Poly Sculpting &amp; Creature Design</h3>
+          <p class="projects-description">Organic head sculpts, facial anatomy, fantasy demon horns, and surface detail sculpting.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Digital Sculpting</span>
+            <span class="tag tag-tool">ZBrush</span>
+            <span class="tag tag-tool">Anatomy</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION: GAME PROJECTS
+       ============================================ -->
+  <section id="gameprojects" class="projects-section gameprojects-section">
+    <div class="section-header">
+      <h2 class="section-title">GAME PROJECTS &amp; TECH</h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">Roblox Hack &amp; Slash, Unity Game Productions, Mobile Games &amp; Game UI/UX</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Game 1: Roblox Game No More Rat! -->
+      <article class="projects-item" data-category="game-project" data-img="assets/images/page_06.png" data-title="Roblox Game: No More Rat!" data-desc="Action Hack &amp; Slash game published on Roblox by MidnightParadise. Modeled the player protagonist hamster, boss enemies, and custom gear.">
+        <div class="projects-image">
+          <img src="assets/images/page_06.png" alt="Roblox Game No More Rat Boss & Enemy Model" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>👾 ROBLOX &bull; PUBLISHED</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">ROBLOX 2024</span>
+            <span class="artwork-spec-pill">BOSS &bull; ENEMY MODELER</span>
+          </div>
+          <h3 class="projects-title">No More Rat! — Hack &amp; Slash Action</h3>
+          <p class="projects-description">Modeled the main protagonist hamster with leather coat, menacing boss enemies, weapon props, and in-game keyart.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Game Dev</span>
+            <span class="tag tag-tool">Roblox Studio</span>
+            <span class="tag tag-tool">Blender</span>
+            <span class="tag tag-tool">Action Game</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Game 2: TiTLE's Nightmare UX/UI -->
+      <article class="projects-item" data-category="game-project" data-img="assets/images/page_18.png" data-title="TiTLE's Nightmare: 2D Horror Shot" data-desc="Complete UI/UX system design for a tense PC horror game: main title menu, settings sliders, HUD health/stamina bars, and moody aesthetic.">
+        <div class="projects-image">
+          <img src="assets/images/page_18.png" alt="TiTLE's Nightmare 2D Horror Game UI/UX" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🖥️ PC GAME &bull; UI/UX</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">PC GAME 2024</span>
+            <span class="artwork-spec-pill">UX / UI DESIGN &bull; HUD</span>
+          </div>
+          <h3 class="projects-title">TiTLE’s Nightmare — 2D Horror Shot</h3>
+          <p class="projects-description">Designed full game interface: audio/video control panels, immersive HUD, typographic layout, and dark psychological ambience.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Game UI/UX</span>
+            <span class="tag tag-tool">Figma</span>
+            <span class="tag tag-tool">Photoshop</span>
+            <span class="tag tag-tool">Horror Theme</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Game 3: Juukie!! The Mouse & Dominion's War Mobile -->
+      <article class="projects-item" data-category="game-project" data-img="assets/images/page_19.png" data-title="Mobile Games: Juukie!! &amp; Dominion's War" data-desc="Designed &amp; developed two mobile game concepts: Juukie!! The Mouse (flying adventure) and Dominion's War: The Card Game with fantasy UI.">
+        <div class="projects-image">
+          <img src="assets/images/page_19.png" alt="Juukie The Mouse and Dominion's War Mobile Games" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>📱 MOBILE GAMES</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">MOBILE 2024</span>
+            <span class="artwork-spec-pill">GAMEPLAY &bull; UI &bull; PIXEL ART</span>
+          </div>
+          <h3 class="projects-title">Juukie!! The Mouse &amp; Dominion's War</h3>
+          <p class="projects-description">Mobile UI design, touch controls, sprite art, card battle mechanics, and responsive on-screen HUD.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Mobile Dev</span>
+            <span class="tag tag-tool">Unity</span>
+            <span class="tag tag-tool">Pixel Art</span>
+            <span class="tag tag-tool">Game Design</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Game 4: 2D Seamless Tilesets & Characters -->
+      <article class="projects-item" data-category="2d-art" data-img="assets/images/page_20.png" data-title="Seamless Tilesets &amp; Character Sheets" data-desc="Tile palette configuration in Unity, 9-slice rock platform tiles, parallax cavern backgrounds, and stylized fantasy witch character concepts.">
+        <div class="projects-image">
+          <img src="assets/images/page_20.png" alt="2D Seamless Tilesets and Characters" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🎨 TILESETS &amp; SPRITES</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">ASSETS 2024</span>
+            <span class="artwork-spec-pill">UNITY TILEMAP &bull; 2D ART</span>
+          </div>
+          <h3 class="projects-title">Seamless Sheets &amp; Designed Characters</h3>
+          <p class="projects-description">Unity 2D Tilemap system with rule tiles, looping parallax cavern layers, and character design lineup.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">2D Assets</span>
+            <span class="tag tag-tool">Unity Tilemap</span>
+            <span class="tag tag-tool">Concept Art</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION: ANIMATION & TECHNICAL ART
+       ============================================ -->
+  <section id="animation" class="projects-section animation-section">
+    <div class="section-header">
+      <h2 class="section-title">ANIMATION &amp; TECH ART</h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">Cutscenes in Unity, Character Movement, and Python Automation Scripting</p>
+    </div>
+
+    <!-- Animation Showcase Card -->
+    <div class="animation-highlight-card">
+      <div class="animation-highlight-image" data-lightbox="assets/images/page_08.png">
+        <img src="assets/images/page_08.png" alt="Animation & Technical Scripting" loading="lazy">
+        <div class="artwork-type-badge">
+          <span>🎬 CUTSCENE &bull; TECH ART</span>
+        </div>
+      </div>
+      <div class="animation-highlight-text">
+        <span class="highlight-badge">IN-CLASS &bull; SELF-PROJECT</span>
+        <h3 class="highlight-title">We Are Chouri: Cinematic Cutscenes &amp; Python Scripting</h3>
+        <p class="highlight-desc">
+          Created immersive cutscenes directly within Unity using Timeline and Cinemachine. Applied custom Python scripting to automate animation stamping, batch keyframe processing, and color adjustment pipelines for high efficiency.
+        </p>
+        <div class="tech-stack-row">
+          <span class="tech-pill">Unity Cinemachine</span>
+          <span class="tech-pill">Python Scripting</span>
+          <span class="tech-pill">Timeline Director</span>
+          <span class="tech-pill">Camera Choreography</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- YouTube Breakdown Videos (Nutt Chin Style) -->
+    <div class="video-reel-grid">
+      <div class="video-card">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/4QMDKKF5QoQ" title="We Are Chouri - Unity Forest Wakeup Cutscene" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-badge">🎮 UNITY CUTSCENE</div>
+          <h4 class="video-title">Chouri: Wakeup in Forest Cutscene</h4>
+          <p class="video-desc">Realtime cinematic lighting, character staging, and camera focal track in Unity.</p>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/wsLVAP0mqXw" title="Character Animation and Python Automation Script" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-badge">⚡ PYTHON AUTOMATION</div>
+          <h4 class="video-title">Character Animation &amp; Scripted Color FX</h4>
+          <p class="video-desc">Automated character animation stamping and dynamic color adjustments via Python scripting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION: 2D ARTWORK & ILLUSTRATION
+       ============================================ -->
+  <section id="artwork2d" class="projects-section artwork2d-section">
+    <div class="section-header">
+      <h2 class="section-title">2D ARTWORK &amp; ILLUSTRATION</h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">Noodle Art, Vector Illustration, Digital Portraits &amp; Concept Sketches</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Item 1: Noodle Art -->
+      <article class="projects-item" data-category="2d-art" data-img="assets/images/page_21.png" data-title="Noodle Art: Intricate Fantasy Flow" data-desc="Intricate dual-tone fantasy composition: full psychedelic color burst juxtaposed with a detailed dark linework doodle tapestry.">
+        <div class="projects-image">
+          <img src="assets/images/page_21.png" alt="Noodle Art Dual Tone Illustration" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🍜 NOODLE ART</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">ILLUSTRATION</span>
+            <span class="artwork-spec-pill">DIGITAL INK &bull; COLOR</span>
+          </div>
+          <h3 class="projects-title">Noodle Art — Fantasy Dreamscape</h3>
+          <p class="projects-description">High-density visual storytelling, organic doodle creatures, vivid lighting contrast, and flowing line mechanics.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Linework</span>
+            <span class="tag tag-tool">Procreate</span>
+            <span class="tag tag-tool">Photoshop</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 2: Adobe Illustrator & Portrait -->
+      <article class="projects-item" data-category="2d-art" data-img="assets/images/page_22.png" data-title="Adobe Illustrator &amp; Portraiture" data-desc="Pop vector anime girl portrait, surreal gradient aura study, and crosshatch texture rendering of fantasy elf figure.">
+        <div class="projects-image">
+          <img src="assets/images/page_22.png" alt="Adobe Illustrator and Portrait Illustrations" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>✒️ VECTOR &amp; PORTRAIT</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">ILLUSTRATION</span>
+            <span class="artwork-spec-pill">ILLUSTRATOR &bull; TEXTURE</span>
+          </div>
+          <h3 class="projects-title">Vector Portraits &amp; Gradient Studies</h3>
+          <p class="projects-description">Bold vector graphic lines, smooth color mesh gradients, and stippled texture portrait painting.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Vector Art</span>
+            <span class="tag tag-tool">Illustrator</span>
+            <span class="tag tag-tool">Color Theory</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 3: Character Posters (Page 23) -->
+      <article class="projects-item" data-category="2d-art" data-img="assets/images/page_23.png" data-title="Character Posters &amp; Concept Art" data-desc="High-fashion dark fantasy character portraits, gothic costume concepts, and expressive digital brushwork.">
+        <div class="projects-image">
+          <img src="assets/images/page_23.png" alt="Character Posters and Concept Art" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>👗 FASHION &amp; CONCEPT</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">CONCEPT ART</span>
+            <span class="artwork-spec-pill">DIGITAL PAINTING</span>
+          </div>
+          <h3 class="projects-title">Gothic &amp; Modern Character Art</h3>
+          <p class="projects-description">Stylized female character designs exploring high fashion silhouettes, expressive line art, and dramatic hair designs.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Character Concept</span>
+            <span class="tag tag-tool">Photoshop</span>
+            <span class="tag tag-tool">Digital Painting</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Item 4: Additional Illustrations (Page 24) -->
+      <article class="projects-item" data-category="2d-art" data-img="assets/images/page_24.png" data-title="Art Collection &amp; Expressions" data-desc="Complete illustration gallery showing dynamic poses, emotive facial expressions, and character costume variations.">
+        <div class="projects-image">
+          <img src="assets/images/page_24.png" alt="Character Art Collection and Expressions" loading="lazy">
+          <div class="artwork-type-badge">
+            <span>🎭 EXPRESSION STUDY</span>
+          </div>
+          <div class="projects-overlay">
+            <div class="artwork-view-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <span class="view-details">Click to View High-Res</span>
+          </div>
+        </div>
+        <div class="projects-info">
+          <div class="projects-meta-top">
+            <span class="projects-year">COLLECTION</span>
+            <span class="artwork-spec-pill">SKETCH &amp; RENDERING</span>
+          </div>
+          <h3 class="projects-title">Character Lineup &amp; Expression Sheets</h3>
+          <p class="projects-description">Exploration of silhouette variety, lighting moods, and storytelling through stylized character portraiture.</p>
+          <div class="projects-tags">
+            <span class="tag tag-category">Character Design</span>
+            <span class="tag tag-tool">Procreate</span>
+            <span class="tag tag-tool">Illustration</span>
+          </div>
+          <div class="artwork-card-footer">
+            <span class="artwork-view-cta">View Full Breakdown <span class="cta-arrow">&rarr;</span></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION: ABOUT ME (Nutt Chin Profile Frame Style)
+       ============================================ -->
+  <section id="about" class="about-section">
+    <div class="section-header">
+      <h2 class="section-title">ABOUT ME</h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">Background, Education &bull; 3D &amp; Game Development Skillsets</p>
+    </div>
+
+    <div class="about-grid">
+      <!-- Profile Card Frame -->
+      <div class="about-profile-col">
+        <div class="profile-card-frame">
+          <img src="assets/images/profile.png" alt="Methichai Prueksaking (AI Methichai)">
+          <div class="profile-card-badge">3D ARTIST</div>
+        </div>
+        <div class="profile-id-box">
+          <div class="profile-name">Methichai Prueksaking</div>
+          <div class="profile-alias">(AI Methichai / Dngo_Kiwrn)</div>
+          <div class="profile-student-id">Student ID: 66120501031</div>
+        </div>
+      </div>
+
+      <!-- Bio & Skill Details -->
+      <div class="about-details-col">
+        <div class="about-bio-card">
+          <h3 class="bio-heading">Hi, I'm Methichai! 👋</h3>
+          <p class="bio-text">
+            I am a 3D Artist and Game Development student at <strong>King Mongkut's University of Technology Thonburi (KMUTT)</strong>, School of Architecture and Design, Department of Media Arts and Media Technology.
+          </p>
+          <p class="bio-text">
+            I am passionate about building immersive worlds, sculpting stylized and believable characters, crafting game-ready 3D assets with clean topology, and scripting automated pipelines to bridge artistic vision with game engine realities.
+          </p>
+
+          <div class="edu-box">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <div class="edu-school">King Mongkut's University of Technology Thonburi (KMUTT)</div>
+              <div class="edu-dept">School of Architecture and Design &bull; Media Technology</div>
+              <div class="edu-major">Major: Game Development</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Breakdown Grid -->
+        <div class="skills-grid">
+
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🧊</span>
+              <h4>3D Modeling &amp; Sculpting</h4>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Blender:</strong> High/Low Poly, Topology, Shaders &amp; Cycles Lighting</li>
+              <li><strong>Autodesk Maya:</strong> Skeletal Rigging, Skinning &amp; Character Animation</li>
+              <li><strong>ZBrush:</strong> High-detail Organic Sculpting &amp; Creature Design</li>
+              <li><strong>Substance 3D Painter:</strong> PBR Materials, Baked Maps &amp; Hand-paint</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🎮</span>
+              <h4>Game Engines &amp; Tech Art</h4>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Unity:</strong> Animator Controller, Cinemachine Cutscenes, Canvas UI</li>
+              <li><strong>Roblox Studio:</strong> Custom Mesh Import, Rigging &amp; Action Bosses</li>
+              <li><strong>Python Scripting:</strong> Animation Stamping &amp; Pipeline Automation</li>
+              <li><strong>Unreal Engine:</strong> Realtime Lighting &amp; Scene Assembly</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🎨</span>
+              <h4>2D Art &amp; UI/UX</h4>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Figma:</strong> Web &amp; Game UI/UX Wireframing &amp; Design Systems</li>
+              <li><strong>Photoshop:</strong> Texture Painting, Retouch &amp; Digital Concept Art</li>
+              <li><strong>Illustrator:</strong> Vector Assets, Graphic Badges &amp; Infographics</li>
+              <li><strong>Procreate:</strong> Dynamic Character Sketching &amp; Noodle Art</li>
+            </ul>
+          </div>
 
         </div>
-		<div class="btn-group">
-            <a href="index.html" class="btn_back1">Quick Up!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION: CONTACT (Clean Glass Cards)
+       ============================================ -->
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <h2 class="section-title">GET IN TOUCH</h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">Open for 3D Artist Internship Opportunities &amp; Creative Collaborations</p>
+    </div>
+
+    <div class="contact-cards-container">
+
+      <!-- Email -->
+      <a href="mailto:methichai5896@gmail.com" class="contact-link-card">
+        <div class="contact-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         </div>
-		<div class="Contract">
-    <h2> Contract</h2>
-    <p>
-        <a href="https://www.facebook.com/kizx.kung" target="_blank" class="Linkicon" aria-label="Facebook">
-            <img src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" alt="Facebook icon" loading="lazy">
-        </a>
-        <a href="https://www.instagram.com/_kaijeavv/" target="_blank" class="Linkicon" aria-label="Instagram">
-            <img src="https://cdn-icons-png.flaticon.com/128/1400/1400829.png" alt="Instagram icon" loading="lazy">
-        </a>
-        <a href="https://www.roblox.com/users/2594844006/profile" target="_blank" class="Linkicon" aria-label="Roblox">
-            <img src="https://cdn-icons-png.flaticon.com/128/18085/18085944.png" alt="Roblox icon" loading="lazy">
-        </a>
-    </p>
-	<h2> Reference</h2>
-	<p>	Reference Slider and CSS etc.  <a href="https://www.youtube.com/@lundeveloper" target="_blank" class="Linkicon" aria-label="Facebook">
-		<img src="https://cdn-icons-png.flaticon.com/128/1481/1481058.png" alt="Facebook icon" loading="lazy">
-	</a>
-	<p>	Reference Design and Picture Onslide <a href="https://www.pinterest.com/" target="_blank" class="Linkicon" aria-label="Facebook">
-		<img src="https://cdn-icons-png.flaticon.com/128/1481/1481058.png" alt="Facebook icon" loading="lazy"></a></p>
-	<p>	Reference Botton, gallery Source and etc. <a href="https://www.w3schools.com/howto/default.asp" target="_blank" class="Linkicon" aria-label="Facebook">
-		<img src="https://cdn-icons-png.flaticon.com/128/1481/1481058.png" alt="Facebook icon" loading="lazy"></a></p>
-    <br>
-</div>
+        <div class="contact-info">
+          <span class="contact-label">EMAIL ADDRESS</span>
+          <span class="contact-value">methichai5896@gmail.com</span>
+        </div>
+        <span class="contact-arrow">&rarr;</span>
+      </a>
 
-		</Section>
+      <!-- Phone -->
+      <a href="tel:+66922675401" class="contact-link-card">
+        <div class="contact-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">PHONE</span>
+          <span class="contact-value">(+66) 092-267-5401</span>
+        </div>
+        <span class="contact-arrow">&rarr;</span>
+      </a>
 
-	</body>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/kaijeavv._" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+        <div class="contact-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">INSTAGRAM</span>
+          <span class="contact-value">@kaijeavv._</span>
+        </div>
+        <span class="contact-arrow">&rarr;</span>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/kizx.kung" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+        <div class="contact-icon-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">FACEBOOK</span>
+          <span class="contact-value">Al Methichai</span>
+        </div>
+        <span class="contact-arrow">&rarr;</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">AI METHICHAI</div>
+      <p class="footer-quote">“ Driven by imagination, shaped by art. ”</p>
+      <p class="footer-copy">&copy; 2026 Methichai Prueksaking. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       FULLSCREEN ARTWORK LIGHTBOX MODAL
+       ============================================ -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Artwork detail view">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close image modal">&times;</button>
+      <div class="lightbox-image-holder">
+        <img src="" alt="Artwork Preview" id="lightbox-img">
+      </div>
+      <div class="lightbox-caption-bar">
+        <h4 id="lightbox-title">Artwork Title</h4>
+        <p id="lightbox-desc">Artwork Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
